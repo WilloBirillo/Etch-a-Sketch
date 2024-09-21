@@ -1,23 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #fdfbd4;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #container {
-    display: flex;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  border: solid;
+  flex-wrap: wrap;
+}
+
+.line {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 
 .cell {
-    border: solid 1px;
-    padding: 20px;
+  flex: 1;
+  border: solid 1px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: solid black;
+  border-radius: 5px;
 }
